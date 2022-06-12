@@ -13,6 +13,7 @@ var myMixChart = new Chart(ctx, {
         xAxisID: 'xAxis',
         yAxisID: 'yAxis',
         borderColor: "rgba(255, 99, 71, 1)",
+        backgroundColor: "rgba(255, 99, 71, 0.2)",
         fill: false,
         tension: 0,
         data: [10500, 12500, 18500, 16500, 18500],
