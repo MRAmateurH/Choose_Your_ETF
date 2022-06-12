@@ -1,11 +1,29 @@
 {% extends "base.html" %}
 
 <!-- title -->
-{% block title %}Dashboard{% endblock %}
+{% block title %}Home{% endblock %}
 
 <!-- content -->
 {% block content %}
 
-<h1>Hello</h1>
+<div class="row mb-2">
+  <div class="col-6">
+    <div class="card mt-2 col-6">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+      >
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 {% endblock %}

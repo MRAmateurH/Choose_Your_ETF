@@ -11,3 +11,8 @@ def dashboard():
 @views.route('/')
 def home():
     return render_template('home.html')
+
+
+@views.route('index')
+def index():
+    return render_template('index.html')
