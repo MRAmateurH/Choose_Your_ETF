@@ -16,17 +16,123 @@
   </div>
 </div>
 
-<div class="card row col-xl-3 mt-3">
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-      aria-expanded="false">
-      投資組合
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
+<div class="row">
+  <div class="col-xl-8">
+    <div class="card mt-3 rounded">
+      <div class="card-body">
+        <div class="dropdown my-4">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            投資組合
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <table id="datatablesSimple">
+          <thead>
+            <tr>
+              <th>股號代碼</th>
+              <th>股號名稱</th>
+              <th>庫存</th>
+              <th>買成日期</th>
+              <th>付出成本</th>
+              <th>風險</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>股號代碼</th>
+              <th>股號名稱</th>
+              <th>庫存</th>
+              <th>買成日期</th>
+              <th>付出成本</th>
+              <th>風險</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>2330</td>
+              <td>台積電</td>
+              <td>1,000</td>
+              <td>2022/06/10</td>
+              <td>530,000</td>
+              <td>0%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card mt-3 rounded">
+      <div class="card-body">
+        <table id="datatablesSimple1">
+          <thead>
+            <tr>
+              <th>股號代碼</th>
+              <th>股號名稱</th>
+              <th>庫存</th>
+              <th>買成日期</th>
+              <th>付出成本</th>
+              <th>風險</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>股號代碼</th>
+              <th>股號名稱</th>
+              <th>庫存</th>
+              <th>買成日期</th>
+              <th>付出成本</th>
+              <th>風險</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>2330</td>
+              <td>台積電</td>
+              <td>1,000</td>
+              <td>2022/06/10</td>
+              <td>530,000</td>
+              <td>0%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <!-- pie chart -->
+  <div class="col-xl-4">
+    <div class="card mt-3 rounded">
+
+          <div class="card-header">
+              <i class="fas fa-chart-pie me-1"></i>
+              資產配置表
+          </div>
+          <div class="card-body">
+            <canvas id="myPieChart" width="100%" height="50">
+            </canvas>
+            <hr>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action">帳面市值
+                <span class="float-end">0</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">總損益
+                <span class="float-end">0</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">交易明細
+                <span class="float-end">0</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">總風險值
+                <span class="float-end">0</span>
+              </a>
+            </div>
+          </div>
+          <!-- <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div> -->
+          
+    </div>
   </div>
 </div>
 

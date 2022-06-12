@@ -50,11 +50,12 @@
           aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="#!">設定</a></li>
+          <li><a class="dropdown-item" href="#!">設定</a></li>
           <!-- <li><a class="dropdown-item" href="#!">Activity Log</a></li> -->
           <li>
             <hr class="dropdown-divider" />
           </li>
-          <li><a class="dropdown-item" href="login.html">登出</a></li>
+          <li><a class="dropdown-item" href="login">登出</a></li>
         </ul>
       </li>
     </ul>
@@ -71,7 +72,13 @@
               </div>
               Dashboard
             </a>
-            <div class="sb-sidenav-menu-heading">Interface</div>
+            <a class="nav-link" href="/">
+              <div class="sb-nav-link-icon">
+                <i class="fas fa-tachometer-alt"></i>
+              </div>
+              My ETF
+            </a>
+            <!-- <div class="sb-sidenav-menu-heading">Interface</div>
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
               aria-expanded="false" aria-controls="collapseLayouts">
               <div class="sb-nav-link-icon">
@@ -143,7 +150,7 @@
             <a class="nav-link" href="tables.html">
               <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
               Tables
-            </a>
+            </a> -->
           </div>
         </div>
       </nav>
@@ -170,6 +177,7 @@
   <script type="text/javascript"
     src="{{ url_for('static', filename='assets/demo//chart-mix-revenue-demo.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='assets/demo//scripts.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='assets/demo//chart-pie-demo.js') }}"></script>
 </body>
 
 </html>
