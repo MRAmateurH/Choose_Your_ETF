@@ -12,10 +12,10 @@
     </ol> -->
 <div class="row mb-2">
   <div class="col-4">
-    <input class="form-control" type="text" />
+    <input class="form-control" type="text" id="inputStockId"/>
   </div>
   <div class="col-8">
-    <button class="btn btn-primary" type="submit" onclick="updateChart()">
+    <button class="btn btn-primary" type="submit" onclick="updateAll()">
       送出
     </button>
   </div>
@@ -201,12 +201,12 @@
     </div>
   </div>
   <div class="col-12 col-md-4 mt-3 mb-4">
-    <div class="card mb-3">
+    <div class="card mb-3" id="inputListData">
       <div class="card-header">
         公司名稱
         <span class="float-end">台灣水泥股分有限公司</span>
       </div>
-      <ul class="list-group  list-group-flush">
+      <ul class="list-group list-group-flush">
         <li class="list-group-item">產業別
           <span class="float-end">水泥工業</span>
         </li>
@@ -239,7 +239,7 @@
         <i class="fa-regular fa-circle-question"></i>
       </button>
       </div>
-      <div class="list-group">
+      <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action">
           <span>短期風險值</span>
           <span class="float-end">0.00%</span>
@@ -320,7 +320,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="btnModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="btnModalLabel">說明</h5>
         <button
           type="button"
           class="btn-close"

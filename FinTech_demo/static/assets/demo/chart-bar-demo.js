@@ -7,12 +7,12 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ["上月營收", "當月營收"],
     datasets: [{
       label: "Revenue",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [4215, 5312, 6251, 7841, 9821, 14984],
+      data: [0, 0],
     }],
   },
   options: {
@@ -30,8 +30,8 @@ var myBarChart = new Chart(ctx, {
       }],
       yAxes: [{
         ticks: {
-          min: 0,
-          max: 15000,
+          // min: 0,
+          // max: 15000,
           maxTicksLimit: 5
         },
         gridLines: {
@@ -48,6 +48,6 @@ var myBarChart = new Chart(ctx, {
 //Test function
 function updateBarChart() {
   //----------- Test Data -----------// 
-  myBarChart.data.datasets[0].data = [10000, 11000, 12000, 13000, 14000, 15000];
+  myBarChart.data.datasets[0].data = [10000, 11000];
   myBarChart.update();
 };
